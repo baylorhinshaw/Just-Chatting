@@ -1,0 +1,26 @@
+{
+  "name": "just-chatting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baylorhinshaw/Just-Chatting.git"
+  },
+  "author": "Baylor Hinshaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baylorhinshaw/Just-Chatting/issues"
+  },
+  "homepage": "https://github.com/baylorhinshaw/Just-Chatting#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
