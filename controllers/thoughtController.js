@@ -31,7 +31,7 @@ module.exports = {
   },
 
   // Delete a single thought
-  deleteThought(req, res) {
+  removeThought(req, res) {
     Thought.findOneAndDelete({ _id: req.params.thoughtId })
       .then((thought) =>
         !thought
@@ -78,7 +78,7 @@ module.exports = {
   },
 
   // Delete reaction from a thought
-  deleteReaction(req, res) {
+  removeReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
       { $pull: { reactions: { reactionId: req.params.reactionId } } },
