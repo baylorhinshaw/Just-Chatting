@@ -1,7 +1,7 @@
 const { User, Thought } = require('../models');
 
 // Aggregate function for total users
-const userTotal = async () =>
+const userCount = async () =>
   User.aggregate()
     .count("userTotal")
     .then((numberOfUsers) => numberOfUsers);
@@ -31,7 +31,6 @@ module.exports = {
             ? res.status(404).json({ message: 'No User with that ID' })
             : res.json({
                 User,
-                grade: await grade(req.params.UserId),
               })
         )
         .catch((err) => {
