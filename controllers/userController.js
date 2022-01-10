@@ -5,8 +5,11 @@ const userCount = async () =>
         .count('userCount')
         .then((numberOfUsers) => numberOfUsers);
 
-// Aggregate function for getting the overall grade using $avg
-// look at Mini Project 28, 18-NoSQL
+// Aggregate function for total users
+const userTotal = async () =>
+  User.aggregate()
+    .count("userTotal")
+    .then((numberOfUsers) => numberOfUsers);
 
 module.exports = {
     // Get all Users
