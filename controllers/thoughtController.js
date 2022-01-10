@@ -1,4 +1,5 @@
 const { Thought, User } = require("../models");
+const reactionsSchema = require('../models/Reaction');
 
 module.exports = {
   // Get all thoughts
